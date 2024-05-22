@@ -1,4 +1,4 @@
-package models;
+package com.example.SpringBootCurso.Models;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -15,7 +15,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "TB_PRODUCTS")
 public class ProductsModel extends RepresentationModel<ProductsModel> implements Serializable{
-	private static final long serialVersionUID = 1l;
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
